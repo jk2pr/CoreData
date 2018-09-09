@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4109BC921437AB400E965E1 /* cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4109BC821437AB400E965E1 /* cell.xib */; };
+		D4109BCC2143858D00E965E1 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4109BCB2143858D00E965E1 /* Cell.swift */; };
 		D43562622116837B00B345D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43562612116837B00B345D0 /* AppDelegate.swift */; };
 		D43562642116837B00B345D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43562632116837B00B345D0 /* ViewController.swift */; };
 		D43562672116837B00B345D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D43562652116837B00B345D0 /* Main.storyboard */; };
-		D435626A2116837B00B345D0 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D43562682116837B00B345D0 /* CoreData.xcdatamodeld */; };
 		D435626C2116837D00B345D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D435626B2116837D00B345D0 /* Assets.xcassets */; };
 		D435626F2116837D00B345D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D435626D2116837D00B345D0 /* LaunchScreen.storyboard */; };
 		D435627A2116872F00B345D0 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D43562782116872F00B345D0 /* DataModel.xcdatamodeld */; };
-		D435627C2116885300B345D0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D435627B2116885300B345D0 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4109BC821437AB400E965E1 /* cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cell.xib; sourceTree = "<group>"; };
+		D4109BCB2143858D00E965E1 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		D435625E2116837A00B345D0 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D43562612116837B00B345D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D43562632116837B00B345D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D43562662116837B00B345D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D43562692116837B00B345D0 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		D435626B2116837D00B345D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D435626E2116837D00B345D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D43562702116837D00B345D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D43562792116872F00B345D0 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
-		D435627B2116885300B345D0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +41,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D4109BC5214379A900E965E1 /* Nib */ = {
+			isa = PBXGroup;
+			children = (
+				D4109BC821437AB400E965E1 /* cell.xib */,
+			);
+			path = Nib;
+			sourceTree = "<group>";
+		};
+		D4109BCA2143857600E965E1 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				D4109BCB2143858D00E965E1 /* Cell.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		D43562552116837A00B345D0 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +76,8 @@
 		D43562602116837B00B345D0 /* todo */ = {
 			isa = PBXGroup;
 			children = (
+				D4109BCA2143857600E965E1 /* Custom */,
+				D4109BC5214379A900E965E1 /* Nib */,
 				D4356277211686FE00B345D0 /* Data Model */,
 				D4356276211686EB00B345D0 /* ViewControllers */,
 				D43562612116837B00B345D0 /* AppDelegate.swift */,
@@ -67,7 +85,6 @@
 				D435626B2116837D00B345D0 /* Assets.xcassets */,
 				D435626D2116837D00B345D0 /* LaunchScreen.storyboard */,
 				D43562702116837D00B345D0 /* Info.plist */,
-				D43562682116837B00B345D0 /* CoreData.xcdatamodeld */,
 			);
 			path = todo;
 			sourceTree = "<group>";
@@ -84,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				D43562782116872F00B345D0 /* DataModel.xcdatamodeld */,
-				D435627B2116885300B345D0 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -148,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D435626F2116837D00B345D0 /* LaunchScreen.storyboard in Resources */,
+				D4109BC921437AB400E965E1 /* cell.xib in Resources */,
 				D435626C2116837D00B345D0 /* Assets.xcassets in Resources */,
 				D43562672116837B00B345D0 /* Main.storyboard in Resources */,
 			);
@@ -160,11 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D435627C2116885300B345D0 /* Item.swift in Sources */,
 				D43562642116837B00B345D0 /* ViewController.swift in Sources */,
+				D4109BCC2143858D00E965E1 /* Cell.swift in Sources */,
 				D435627A2116872F00B345D0 /* DataModel.xcdatamodeld in Sources */,
 				D43562622116837B00B345D0 /* AppDelegate.swift in Sources */,
-				D435626A2116837B00B345D0 /* CoreData.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG27EUDP3Y;
 				INFOPLIST_FILE = "$(SRCROOT)/todo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,6 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG27EUDP3Y;
 				INFOPLIST_FILE = "$(SRCROOT)/todo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,16 +382,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D43562682116837B00B345D0 /* CoreData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				D43562692116837B00B345D0 /* CoreData.xcdatamodel */,
-			);
-			currentVersion = D43562692116837B00B345D0 /* CoreData.xcdatamodel */;
-			path = CoreData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		D43562782116872F00B345D0 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
